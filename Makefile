@@ -12,4 +12,6 @@ devmem2.o : devmem2.c
 	$(CC) -c devmem2.c
 
 clean :
-	rm devmem2 *.o
+	@echo "Cleaning up..."
+	-$(shell rm -f devmem2 *.o)
+	@echo "Done."
